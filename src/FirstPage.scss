@@ -1,0 +1,16 @@
+.root {
+  color: "black";
+  font-size: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  & > * {
+    margin: 1rem 0;
+  }
+}
+
+p:not(:first-child)::after {
+  content: "|";
+  padding: 1rem;
+  color: white;
+}
